@@ -4,9 +4,14 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "commit-msg": "npm run commitlint",
+    "pre-push": "node ./common/utils/pre-push.js",
     "pretty-quick": "pretty-quick",
     "commitlint": "commitlint -e .git/COMMIT_EDITMSG",
     "pretty-quick--staged": "pretty-quick --staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   },
   "author": {
     "name": "vimalakirti409",
@@ -20,6 +25,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "chalk": "^5.2.0",
+    "lint-staged": "^13.2.0",
     "prettier": "^2.8.4",
     "pretty-quick": "^3.1.3"
   }
