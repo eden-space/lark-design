@@ -12,7 +12,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": ["eslint --fix"]
+    "*.js": ["eslint --fix"]
   },
   "author": {
     "name": "vimalakirti409",
