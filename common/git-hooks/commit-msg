@@ -1,5 +1,3 @@
 #!/bin/sh
 
 npm run commit-msg
-
-echo "---123456789"
