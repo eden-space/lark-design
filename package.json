@@ -1,0 +1,18 @@
+{
+  "name": "lark",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rush build"
+  },
+  "author": {
+    "name": "vimalakirti409",
+    "email": "vimalakirti409@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eden-space/lark.git"
+  },
+  "license": "ISC"
+}
