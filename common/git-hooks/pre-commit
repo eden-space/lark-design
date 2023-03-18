@@ -2,4 +2,4 @@
 
 npm run pretty-quick--staged
 
-#lint-staged
+npm run lint-staged

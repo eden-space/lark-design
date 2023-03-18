@@ -8,7 +8,8 @@
     "pre-push": "node ./common/utils/pre-push.js",
     "pretty-quick": "pretty-quick",
     "commitlint": "commitlint -e .git/COMMIT_EDITMSG",
-    "pretty-quick--staged": "pretty-quick --staged"
+    "pretty-quick--staged": "pretty-quick --staged",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.js": "eslint --fix"
