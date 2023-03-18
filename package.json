@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rush build"
+    "build": "rush build",
+    "commitlint": "commitlint"
   },
   "author": {
     "name": "vimalakirti409",
@@ -14,5 +15,9 @@
     "type": "git",
     "url": "https://github.com/eden-space/lark.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4"
+  }
 }
