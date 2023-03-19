@@ -7,7 +7,6 @@
     "commit-msg": "npm run commitlint",
     "pre-push": "node ./common/utils/pre-push.js",
     "pretty-quick": "pretty-quick",
-    "pretty-quick--staged": "pretty-quick --staged",
     "commitlint": "commitlint -e .git/COMMIT_EDITMSG",
     "lint-staged": "lint-staged"
   },
@@ -15,7 +14,7 @@
     "*.{js,ts,tsx}": [
       "npm run pretty-quick"
     ],
-    "*.json": "npm run pretty-quick--staged"
+    "*.json": "npm run pretty-quick"
   },
   "author": {
     "name": "vimalakirti409",
