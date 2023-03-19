@@ -83,9 +83,10 @@ function setRootPixel(config?: ISetRootPixelConfig) {
     if (useRootFontSizeBeyondMax) {
       htmlFontSizePx = htmlFontSizePx < maxRootFontSize ? htmlFontSizePx : rootFontSize;
     } else {
-      /* 兼容移动端页面在pc站上的显示，
-       media query后固定body的宽度，这时候以浏览器宽度来计算html的font-size就会使页面样式错乱
-      */
+      /**
+       * 兼容移动端页面在pc站上的显示，
+       * media query后固定body的宽度，这时候以浏览器宽度来计算html的font-size就会使页面样式错乱
+       */
       htmlFontSizePx = Math.min(htmlFontSizePx, maxRootFontSize);
     }
 
