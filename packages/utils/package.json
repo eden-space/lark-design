@@ -8,7 +8,7 @@
     "build": "echo \"Error: no build specified\" && exit 0"
   },
   "author": {
-    "name": "vimalakirti409",
+      "name": "vimalakirti409",
     "email": "vimalakirti409@gmail.com"
   },
   "repository": {
