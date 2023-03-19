@@ -10,9 +10,8 @@
     "commitlint": "commitlint -e .git/COMMIT_EDITMSG",
     "lint-staged": "lint-staged"
   },
-
   "lint-staged": {
-      "*.{js,ts,tsx,json}": [
+    "*.{js,ts,tsx,json}": [
       "pretty-quick --staged"
     ]
   },
