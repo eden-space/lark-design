@@ -6,6 +6,14 @@
  * @return {function} removeRootPixel，removeRootPixel 取消 baseFontSize 设置并移除 resize 监听
  */
 
+window.name;
+declare global {
+  interface Window {
+    __ROOT_FONT_SIZE__: number;
+    __IS_RESPONSIVE__: boolean;
+  }
+}
+
 export interface ISetRootPixelConfig {
   rootFontSize?: number;
   maxRootFontSize?: number;
@@ -25,7 +33,7 @@ function setRootPixel(config?: ISetRootPixelConfig) {
 
   let defaultFontSize = 0;
   const widthQueryKey = 'width_query_key'; // url里取值
-  const rootFontSizeVariableName = '__ROOT_FONT_SIZE__'; // we will expose root font size to global, this is the variable name
+  const rootFontSizeVariableName = '__ROOT_FONT_SIZE__';
   const isResponsiveVariableName = '__IS_RESPONSIVE__';
 
   function getDefaultFontSize() {
@@ -44,7 +52,7 @@ function setRootPixel(config?: ISetRootPixelConfig) {
     return defaultFontSize;
   }
 
-  function getQuery(name) {
+  function getQuery(name: string) {
     return (new RegExp('[?&]' + name + '=([^&#\\b]+)').exec(location.search || '') || [])[1];
   }
 
@@ -94,12 +102,7 @@ function setRootPixel(config?: ISetRootPixelConfig) {
     document.documentElement.style.fontSize = (htmlFontSizePx / getDefaultFontSize()) * 100 + '%';
   }
 
-  function adjust(immediate) {
-    if (immediate) {
-      setRootFontSize();
-      return;
-    }
-
+  function adjust() {
     setTimeout(setRootFontSize, 30);
   }
 
@@ -118,7 +121,8 @@ function setRootPixel(config?: ISetRootPixelConfig) {
     };
   }
 
-  adjust(true);
+  // adjust(true);
+  setRootFontSize();
 
   window.addEventListener('resize', adjust, false);
 
