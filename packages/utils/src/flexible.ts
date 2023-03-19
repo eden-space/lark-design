@@ -6,7 +6,6 @@
  * @return {function} removeRootPixel，removeRootPixel 取消 baseFontSize 设置并移除 resize 监听
  */
 
-window.name;
 declare global {
   interface Window {
     __ROOT_FONT_SIZE__: number;
