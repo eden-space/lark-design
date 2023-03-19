@@ -1,5 +1,5 @@
 /**
- * rem自适应布局
+ * rem flexible
  * @param baseFontSize {number} 1rem 基准 fontSize，default 50
  * @param designSketchWidth {number} UI 稿宽度，default 375
  * @param maxFontSize {number} 最大 fontSize 限制， default 64
