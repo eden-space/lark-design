@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "prettier --trailing-comma es5 --single-quote --write",
+      "pretty-quick --staged",
       "git add"
     ]
   },
