@@ -1,7 +1,7 @@
 /**
- * @title 基础用法
- * @sort 1
- * @description 123
+ * @param title - 基础用法
+ * @param sort - 1
+ * @param desc - 一段描述
  */
 
 import React from 'react';
