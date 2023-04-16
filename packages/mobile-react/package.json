@@ -8,7 +8,6 @@
     "build": "echo \"Error: no build specified\" && exit 0"
   },
   "dependencies": {
-    "@lark/hooks": "workspace:*",
     "@lark/utils": "workspace:*",
     "resize-observer-polyfill": "~1.5.1"
   },
