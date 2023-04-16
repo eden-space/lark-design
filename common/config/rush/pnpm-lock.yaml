@@ -1,0 +1,23 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers: {}
+
+  ../../packages/mobile-react:
+    specifiers:
+      '@lark/utils': workspace:*
+      resize-observer-polyfill: ~1.5.1
+    dependencies:
+      '@lark/utils': link:../utils
+      resize-observer-polyfill: 1.5.1
+
+  ../../packages/utils:
+    specifiers: {}
+
+packages:
+
+  /resize-observer-polyfill/1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
+    dev: false
