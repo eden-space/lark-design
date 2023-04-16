@@ -424,14 +424,14 @@
     //   "tags": [ "tools" ]
     // }
     {
-      "packageName": "@lark-design/mobile-react",
-      "projectFolder": "packages/mobile-react",
+      "packageName": "@react-hooks/use-immer",
+      "projectFolder": "packages/use-immer",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     {
-      "packageName": "@lark/utils",
-      "projectFolder": "packages/utils",
+      "packageName": "@react-hooks/use-snapshot",
+      "projectFolder": "packages/use-snapshot",
       "reviewCategory": "production",
       "shouldPublish": true
     }
